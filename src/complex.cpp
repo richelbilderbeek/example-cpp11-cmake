@@ -21,14 +21,14 @@ Complex& Complex::operator=(const Complex& rhs) {
 	return *this;
 }
 
-double Complex::getReal() const {
+double Complex::getReal() const noexcept {
 	return this->real;
 }
 
-double Complex::getImag() const {
+double Complex::getImag() const noexcept {
 	return this->imaginary;
 }
 
-double Complex::abs() const {
+double Complex::abs() const noexcept {
 	return sqrt(this->real * this->real + this->imaginary * this->imaginary);
 }

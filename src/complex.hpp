@@ -25,9 +25,9 @@ public:
 	// Assigment operator
 	Complex& operator=(const Complex& rhs);
 	// Methods
-	double getReal() const;
-	double getImag() const;
-	double abs() const;
+	double getReal() const noexcept;
+	double getImag() const noexcept;
+	double abs() const noexcept;
 };
 
 #endif // _SRC_COMPLEX_HPP_
